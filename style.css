@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Mont';
+    src: url("./assets/Font/Mont-HeavyDEMO.otf") format("opentype");
+}
+
+.grid {
+    display: grid;
+}
+
+body {
+    background-color: #2E318C;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    align-content: center;
+
+    background-color: #2F318D;
+    font-family: Mont;
+}
+
+#violet {
+    grid-column: 1 / 2;
+    margin-left: 3%;
+    font-style: italic;
+    color: #2F6EB5;
+}
+
+#navigation {
+    grid-column: 2 / 3;
+    justify-self: right;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navigation li {
+    float: left;
+    background-color:#2F318D;
+    transition: background-color 500ms ease-in-out 80ms;
+}
+
+#navigation li a {
+    display: block;
+    color: #2F6EB5;
+    padding: 0.90rem;
+    /* text-align: center; */
+    text-decoration: none;
+    
+}
+
+#navigation li:hover {
+    background-color: #562C7F;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+main img {
+    align-self: center;
+    padding-top: 60px;
+    height: auto;  
+}
+
+#logo {
+    max-width: 30%; 
+}
+
+#tracklist {
+    max-width: 60%;
+    padding-bottom: 5%;
+}
